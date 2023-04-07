@@ -1,0 +1,114 @@
+#flash-sale-product .title {
+  box-sizing: border-box;
+  padding: 5px;
+  border: 2px solid #313131;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 24px;
+  color: #17201d;
+}
+
+#flash-sale-product .card {
+  width: 250px;
+  height: 330px;
+  border: 1px solid #ddd;
+  margin: 0 10px;
+}
+
+#flash-sale-product .card img {
+  margin: 5px auto;
+  height: 120px;
+}
+
+#flash-sale-product .card .catagory {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #8b928f;
+  margin-bottom: 3px;
+}
+
+#flash-sale-product .card .card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+#flash-sale-product .card .btn {
+  background: #96aea170;
+  opacity: 1;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+}
+
+#flash-sale-product .card .price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #5b9982;
+}
+
+#flash-sale-product .card .old-price {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+#flash-sale-product .swiper {
+  width: 100%;
+  height: 100% !important;
+}
+
+#flash-sale-product .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#flash-sale-product .swiper {
+  width: 100%;
+  height: 300px;
+  margin: 5px 20px auto;
+  position: initial;
+}
+
+#flash-sale-product .swiper .swiper-button-prev {
+  position: absolute !important;
+  background-image: url('../../image/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  top: -25px;
+  left: 94%;
+  right: 10px !important;
+  color: white;
+  width: 25px;
+}
+
+.swiper-button-next {
+  background-image: url('../../image/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  position: absolute !important;
+  top: -25px !important;
+  right: 10px !important;
+  color: white;
+  width: 25px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
