@@ -119,8 +119,26 @@
   display: none;
 }
 
+#flash-sale-product .card .hover-block img {
+  height: 15px;
+}
+
+#flash-sale-product .card .hover-block {
+  display: none;
+}
+
 #flash-sale-product .card:hover .btn {
   background: #96aea1;
+}
+
+#flash-sale-product .card:hover .hover-none {
+  display: none !important;
+}
+
+#flash-sale-product .card:hover .hover-block {
+  display: block;
+  margin: 13px 5px;
+  border: 1px solid #ddd;
 }
 
 @media screen and (max-width: 480px) {
