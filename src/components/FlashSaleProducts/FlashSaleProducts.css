@@ -4,14 +4,16 @@
   border: 2px solid #313131;
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 900;
   font-size: 34px;
   line-height: 24px;
-  color: #17201d;
+  color: #18211e;
+}
+#flash-sale-product .title span {
+  font-weight: 900;
 }
 
 #flash-sale-product .card {
-  width: 250px;
+  width: 248px;
   height: 330px;
   border: 1px solid #ddd;
   margin: 0 10px;
@@ -79,36 +81,56 @@
 #flash-sale-product .swiper {
   width: 100%;
   height: 300px;
-  margin: 5px 20px auto;
+  margin: 5px 10px auto;
   position: initial;
 }
 
-#flash-sale-product .swiper .swiper-button-prev {
-  position: absolute !important;
-  background-image: url('../../image/arrow-left.svg');
+.swiper-button-prev,
+.swiper-button-next {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  top: -25px;
-  left: 94%;
-  right: 10px !important;
-  color: white;
+  position: absolute !important;
   width: 25px;
+}
+
+.swiper-button-prev {
+  background-image: url('../../image/arrow-left.svg');
+}
+
+#flash-sale-product .swiper-button-prev {
+  left: 94% !important;
+  top: -25px !important;
+  right: 10px !important;
 }
 
 .swiper-button-next {
   background-image: url('../../image/arrow-right.svg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  position: absolute !important;
+  right: 10px !important;
+}
+
+#flash-sale-product .swiper-button-next {
   top: -25px !important;
   right: 10px !important;
-  color: white;
-  width: 25px;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
+
+/* .swiper-container {
+  width: 480px;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+} */

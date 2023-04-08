@@ -1,10 +1,30 @@
 import React from 'react';
+import { trendingProducts } from '../../data';
 import './TrendingProducts.css';
+
+import SingleProduct from './SingleProduct';
+
+const dress = trendingProducts.filter(item => item.catagory === "Dress");
+const food = trendingProducts.filter(item => item.catagory === "Food");
+const cosmetics = trendingProducts.filter(item => item.catagory === "Cosmetics");
 
 const TrendingProducts = () => {
     return (
-        <div>
-
+        <div id='trending-product'>
+            <div className="p-5">
+                <h2 className='title'><span>Trending</span> Product</h2>
+                <div className="row">
+                    <div className="col-md-4 col-sm-12">
+                        <SingleProduct product={dress} />
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                        <SingleProduct product={food} />
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                        <SingleProduct product={cosmetics} />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
