@@ -12,7 +12,7 @@ function CountdownTimer({ deadline }) {
     }, []);
 
     function calculateTimeRemaining() {
-        const deadlineDate = new Date("2023-04-9");
+        const deadlineDate = new Date("2023-04-15");
         const now = new Date();
         const timeDiff = deadlineDate - now;
         if (timeDiff <= 0) {

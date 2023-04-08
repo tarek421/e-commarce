@@ -119,7 +119,8 @@
   display: none;
 }
 
-@media only screen and (min-width: 480px) {
+#flash-sale-product .card:hover .btn {
+  background: #96aea1;
 }
 
 @media screen and (max-width: 480px) {
