@@ -17,3 +17,10 @@
   text-align: center;
   color: #554fa6;
 }
+
+@media screen and (max-width: 480px) {
+  #count-down {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}

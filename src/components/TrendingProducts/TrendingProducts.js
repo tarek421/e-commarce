@@ -15,13 +15,13 @@ const TrendingProducts = () => {
                 <h2 className='title'><span>Trending</span> Product</h2>
                 <div className="row">
                     <div className="col-md-4 col-sm-12">
-                        <SingleProduct product={dress} />
+                        <SingleProduct title="Fashion For Women" product={dress} />
                     </div>
                     <div className="col-md-4 col-sm-12">
-                        <SingleProduct product={food} />
+                        <SingleProduct title="Food For Health" product={food} />
                     </div>
                     <div className="col-md-4 col-sm-12">
-                        <SingleProduct product={cosmetics} />
+                        <SingleProduct title="Cosmetics For Winter" product={cosmetics} />
                     </div>
                 </div>
             </div>

@@ -17,13 +17,13 @@ const FlashSaleProducts = () => {
             <div className="p-5">
                 <div className="row">
                     <div className="col-lg-10 col-md-12">
-                        <div className="header d-flex">
-                            <div className='d-flex align-items-center'>
+                        <div className=" d-flex">
+                            <div className='header d-flex align-items-center'>
                                 <h2 className='title'><span>Flash</span> Sale Product</h2>
                                 <CountdownTimer />
                             </div>
                         </div>
-                        <div className="content d-flex  position-relative">
+                        <div className="content d-flex position-relative">
                             <Swiper
                                 spaceBetween={0}
                                 pagination={{

@@ -96,3 +96,17 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+@media screen and (max-width: 480px) {
+  #trending-product .title {
+    width: 100% !important;
+  }
+
+  #trending-product .swiper {
+    height: 465px;
+  }
+
+  #trending-product .card .card-title {
+    line-height: 18px;
+  }
+}

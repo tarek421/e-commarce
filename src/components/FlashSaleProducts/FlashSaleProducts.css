@@ -119,6 +119,24 @@
   display: none;
 }
 
+@media only screen and (min-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
+  #flash-sale-product .title {
+    font-size: 20px;
+  }
+  #flash-sale-product .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  #flash-sale-product .header {
+    display: flex !important;
+    flex-direction: column !important;
+    margin: auto;
+  }
+}
+
 /* .swiper-container {
   width: 480px;
 }

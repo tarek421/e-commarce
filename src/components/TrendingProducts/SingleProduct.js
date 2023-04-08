@@ -11,12 +11,16 @@ import { Rating } from 'react-simple-star-rating';
 SwiperCore.use([Virtual, Navigation]);
 
 
-const SingleProduct = ({ product }) => {
-    console.log(product);
+const SingleProduct = ({ title, product }) => {
+
+    const title1 = title.split(" ", 1);
+    const title2 = title.split(" ", 3);
+    console.log(title2);
+
     return (
         <div className='mt-3 position-relative'>
             <div className='d-flex align-items-center'>
-                <h4 className='sub-title'><span>Food</span> For Health</h4>
+                <h4 className='sub-title'><span>{title1}</span> For {title2[2]}</h4>
             </div>
             <div>
                 <Swiper
