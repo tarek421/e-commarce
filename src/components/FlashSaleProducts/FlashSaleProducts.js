@@ -46,7 +46,7 @@ const FlashSaleProducts = () => {
                                     },
                                     1020: {
                                         width: 1020,
-                                        slidesPerView: 5,
+                                        slidesPerView: 4,
                                     },
                                 }}
                             >

@@ -29,7 +29,7 @@ export const flashSaleProducts = [
     },
     {
         id: 2,
-        title: "Lomitech F310 - Wifi & USB RGB Dual Gamepad - for smooth experience",
+        title: "Lomitech F310 - Wifi & USB RGB Dual Gamepad - for smooth",
         catagory: "Electronics",
         image: image2,
         oldPrice: 3000,
@@ -56,7 +56,7 @@ export const flashSaleProducts = [
     },
     {
         id: 5,
-        title: "Lomitech F310 - Wifi & USB RGB Dual Gamepad - for smooth experience",
+        title: "Lomitech F310 - Wifi & USB RGB Dual Gamepad - for smooth",
         catagory: "Electronics",
         image: image5,
         oldPrice: 3000,

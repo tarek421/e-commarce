@@ -14,14 +14,26 @@
 
 #flash-sale-product .card {
   width: 248px;
-  height: 330px;
   border: 1px solid #ddd;
   margin: 0 10px;
+  transition: all 1s;
 }
 
-#flash-sale-product .card img {
-  margin: 5px auto;
-  height: 120px;
+#flash-sale-product .card .sale {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: -0.02em;
+  background: #fae8e4;
+  border-radius: 2px;
+  color: #db2f06;
+  width: 40px;
+  height: 27px;
+  padding: 8px;
+  text-align: center;
+  margin: 7px;
 }
 
 #flash-sale-product .card .catagory {
@@ -98,15 +110,13 @@
   background-image: url('../../image/arrow-left.svg');
 }
 
+.swiper-button-next {
+  background-image: url('../../image/arrow-right.svg');
+}
+
 #flash-sale-product .swiper-button-prev {
   left: 94% !important;
   top: -25px !important;
-  right: 10px !important;
-}
-
-.swiper-button-next {
-  background-image: url('../../image/arrow-right.svg');
-  right: 10px !important;
 }
 
 #flash-sale-product .swiper-button-next {
@@ -114,20 +124,36 @@
   right: 10px !important;
 }
 
+#card .swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, 10px) !important;
+  top: var(--swiper-navigation-top-offset, 50%) !important;
+}
+
+#card .swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 10px);
+  top: var(--swiper-navigation-top-offset, 50%) !important;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
 }
 
-#flash-sale-product .card .hover-block img {
+#flash-sale-product .card .icon img {
   height: 15px;
+  margin: 5px auto;
+}
+
+#flash-sale-product .card img {
+  margin: 5px auto;
+  height: 120px;
 }
 
 #flash-sale-product .card .hover-block {
   display: none;
 }
 
-#flash-sale-product .card:hover .btn {
+#flash-sale-product .card .btn :hover {
   background: #96aea1;
 }
 
@@ -135,10 +161,18 @@
   display: none !important;
 }
 
-#flash-sale-product .card:hover .hover-block {
-  display: block;
+#flash-sale-product .card:hover .card-body .hover-block {
   margin: 13px 5px;
   border: 1px solid #ddd;
+}
+
+#flash-sale-product #card .swiper {
+  position: relative;
+  margin: 0;
+}
+
+#flash-sale-product .card:hover .hover-block {
+  display: block;
 }
 
 @media screen and (max-width: 480px) {
@@ -155,19 +189,3 @@
     margin: auto;
   }
 }
-
-/* .swiper-container {
-  width: 480px;
-}
-
-@media screen and (min-width: 640px) {
-  .swiper-container {
-    width: 640px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-container {
-    width: 768px;
-  }
-} */
